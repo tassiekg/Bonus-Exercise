@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dining &amp; Food | Miami Freshman Field Guide</title>
+    <meta name="description" content="Filter and search campus dining locations with JavaScript." />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Materialize CSS 1.0.0, from the official getting-started documentation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <div class="site-topline">
+        <div class="container"><span>THE FIRST-YEAR FIELD GUIDE · OXFORD, OHIO</span><span class="topline-right">Student project example · <a href="https://miamioh.edu/life-at-miami/new-students-orientation/orientation/guidebook/" target="_blank" rel="noopener noreferrer">Official guidebook</a></span></div>
+    </div>
+    <nav id="site-nav" aria-label="Primary navigation">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-link" aria-label="Miami Freshman Guide homepage"><span class="brand-mark" aria-hidden="true">M</span><span class="brand-wordmark"><b>MIAMI UNIVERSITY</b><small>FRESHMAN FIELD GUIDE</small></span></a>
+            <div class="desktop-links"><a href="index.html" class="">Home</a><a href="#!" class="dropdown-trigger" data-target="drop-0" aria-label="Getting Started menu">Getting Started <i class="material-icons" aria-hidden="true">expand_more</i></a><a href="#!" class="dropdown-trigger" data-target="drop-1" aria-label="Campus Life menu">Campus Life <i class="material-icons" aria-hidden="true">expand_more</i></a><a href="#!" class="dropdown-trigger" data-target="drop-2" aria-label="Explore menu">Explore <i class="material-icons" aria-hidden="true">expand_more</i></a><a href="#!" class="dropdown-trigger" data-target="drop-3" aria-label="Support menu">Support <i class="material-icons" aria-hidden="true">expand_more</i></a></div><a class="nav-cta waves-effect waves-light" href="checklist.html">Get ready <i class="material-icons" aria-hidden="true">arrow_forward</i></a>
+            <button type="button" class="menu-button sidenav-trigger" data-target="mobile-nav" aria-label="Open mobile menu" aria-controls="mobile-nav"><i class="material-icons" aria-hidden="true">menu</i></button>
+        </div>
+    </nav>
+    <ul id="drop-0" class="dropdown-content">
+        <li><a href="checklist.html">Freshman checklist</a></li>
+        <li><a href="orientation.html">Orientation & Welcome</a></li>
+    </ul>
+    <ul id="drop-1" class="dropdown-content">
+        <li><a href="housing.html">Housing & residence life</a></li>
+        <li><a href="dining.html">Dining & food</a></li>
+        <li><a href="activities.html">Clubs & activities</a></li>
+    </ul>
+    <ul id="drop-2" class="dropdown-content">
+        <li><a href="academics.html">Academics & registration</a></li>
+        <li><a href="campus.html">Campus & transportation</a></li>
+        <li><a href="oxford.html">Oxford</a></li>        
+    </ul>
+    <ul id="drop-3" class="dropdown-content">
+        <li><a href="support.html">Health & wellness</a></li>
+        <li><a href="faq.html">FAQs & contact</a></li>
+    </ul>
+    <ul class="sidenav" id="mobile-nav" aria-label="Mobile navigation">
+        <li>
+            <div class="mobile-header"><b>MIAMI FIELD GUIDE</b>
+                <p>Everything you need for day one.</p>
+            </div>
+        </li>
+        <li><a href="index.html" class=""><i class="material-icons" aria-hidden="true">home</i> Home</a></li>
+        <li>
+            <div class="subnav-label">Get started</div>
+        </li>
+        <li><a href="checklist.html" class=""><i class="material-icons" aria-hidden="true">checklist</i> Freshman Checklist</a></li>
+        <li><a href="orientation.html" class=""><i class="material-icons" aria-hidden="true">event</i> Orientation & Welcome</a></li>
+        <li>
+            <div class="subnav-label">Campus life</div>
+        </li>
+        <li><a href="housing.html" class=""><i class="material-icons" aria-hidden="true">hotel</i> Housing & Residence Life</a></li>
+        <li><a href="dining.html" class="active"><i class="material-icons" aria-hidden="true">restaurant</i> Dining & Food</a></li>
+        <li>
+            <div class="subnav-label">Academics</div>
+        </li>
+        <li><a href="academics.html" class=""><i class="material-icons" aria-hidden="true">school</i> Academics</a></li>
+        <li><a href="campus.html" class=""><i class="material-icons" aria-hidden="true">map</i> Campus & Tranport</a></li>
+        <li><a href="oxford.html" class=""><i class="material-icons" aria-hidden="true">local_activity</i> Oxford</a></li>
+        <li>
+            <div class="subnav-label">Explore</div>
+        </li>
+        <li><a href="activities.html" class=""><i class="material-icons" aria-hidden="true">groups</i> Clubs & Activities</a></li>
+        <li><a href="support.html" class=""><i class="material-icons" aria-hidden="true">favorite</i> Wellness & Support</a></li>
+        <li>
+            <div class="subnav-label">Ask</div>
+        </li>
+        <li><a href="faq.html" class=""><i class="material-icons" aria-hidden="true">help_outline</i> FAQs & Contact</a></li>
+    </ul>
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container page-hero-grid">
+                <div>
+                    <div class="breadcrumbs"><a href="index.html">Home</a> / Dining &amp; Food</div><span class="eyebrow">EAT, MEET, REPEAT</span>
+                    <h1>Your next favorite bite awaits.</h1>
+                    <p>From dining commons to grab-and-go options, Miami gives you plenty of ways to refuel between classes.</p>
+                </div>
+                <div class="page-hero-icon" aria-hidden="true"><i class="material-icons" aria-hidden="true">restaurant</i></div>
+            </div>
+        </section>
+        <div class="container page-main">
+            <div class="split-col">
+                <div>
+                    <div class="section-header"><span class="eyebrow">DISCOVER DINING</span>
+                        <h2>What sounds good today?</h2>
+                        <p>Use the buttons and search box to explore a sample directory of campus dining options. Actual locations and menus may change.</p>
+                    </div>
+                    <div data-dining-root>
+                        <div class="search-field"><label class="sr-only" for="diningSearch">Search dining locations</label><i class="material-icons" aria-hidden="true">search</i><input type="search" id="diningSearch" placeholder="Search a place or keyword…" autocomplete="off" /></div>
+                        <div class="filter-bar" aria-label="Filter dining locations"><button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All places</button><button type="button" class="filter-btn" data-filter="commons" aria-pressed="false">Dining commons</button><button type="button" class="filter-btn" data-filter="retail" aria-pressed="false">Retail</button><button type="button" class="filter-btn" data-filter="cafe" aria-pressed="false">Cafes</button></div>
+                        <p id="diningResultCount" class="result-count" aria-live="polite">Showing 8 of 8 places</p>
+                        <div class="directory-grid">
+                            <article class="directory-card" data-dining-category="commons" data-keywords="dining meal swipes buffet">
+                                <div class="round-icon"><i class="material-icons" aria-hidden="true">restaurant</i></div>
+                                <div>
+                                    <div class="microtag">DINING COMMONS</div>
+                                    <h3>Garden Dining Commons</h3>
+                                    <p>A campus dining commons with multiple meal options and a place to sit down together.</p>
+                                </div>
+                            </article>
+                            <article class="directory-card" data-dining-category="commons" data-keywords="maple street buffet">
+                                <div class="round-icon"><i class="material-icons" aria-hidden="true">ramen_dining</i></div>
+                                <div>
+                                    <div class="microtag">DINING COMMONS</div>
+                                    <h3>Maplestreet Dining Commons</h3>
+                                    <p>A convenient dining commons to explore meals, stations and everyday favorites.</p>
+                                </div>
+                            </article>
+                            <article class="directory-card" data-dining-category="commons" data-keywords="western meals">
+                                <div class="round-icon"><i class="material-icons" aria-hidden="true">local_dining</i></div>
+                                <div>
+                                    <div class="microtag">DINING COMMONS</div>
+                                    <h3>Western Dining Commons</h3>
+                                    <p>Explore a dining commons serving students on the western side of campus.</p>
+                                </div>
+                            </article>
+                            <article class="directory-card" data-dining-category="retail" data-keywords="food student center retail">
+                                <div class="round-icon"><i class="material-icons" aria-hidden="true">storefront</i></div>
+                                <div>
+                                    <div class="microtag">RETAIL &amp; MARKET</div>
+                                    <h3>Armstrong Student Center</h3>
+                                    <p>A student gathering place with retail food options and areas to spend time with friends.</p>
+                                </div>
+                            </article>
+                            <article class="directory-card" data-dining-category="retail" data-keywords="bell tower high street retail">
+                                <div class="round-icon"><i class="material-icons" aria-hidden="true">local_cafe</i></div>
+                                <div>
+                                    <div class="microtag">RETAIL &amp; MARKET</div>
+                                    <h3>Bell Tower</h3>
+                                    <p>A central campus dining area close to the heart of Oxford campus life.</p>
+                                </div>
+                            </article>
+                            <article class="directory-card" data-dining-category="retail" data-keywords="business cafe lunch retail">
+                                <div class="round-icon"><i class="material-icons" aria-hidden="true">lunch_dining</i></div>
+                                <div>
+                                    <div class="microtag">RETAIL &amp; MARKET</div>
+                                    <h3>Dividends</h3>
+                                    <p>A convenient food stop associated with the Farmer School of Business area.</p>
+                                </div>
+                            </article>
+                            <article class="directory-card" data-dining-category="cafe" data-keywords="coffee pulse wellness">
+                                <div class="round-icon"><i class="material-icons" aria-hidden="true">coffee</i></div>
+                                <div>
+                                    <div class="microtag">CAFE</div>
+                                    <h3>Pulse Cafe</h3>
+                                    <p>A cafe option in the Clinical Health Sciences and Wellness Facility area.</p>
+                                </div>
+                            </article>
+                            <article class="directory-card" data-dining-category="retail" data-keywords="allergen friendly gluten-free">
+                                <div class="round-icon"><i class="material-icons" aria-hidden="true">spa</i></div>
+                                <div>
+                                    <div class="microtag">RETAIL &amp; MARKET</div>
+                                    <h3>Patio Grill</h3>
+                                    <p>A campus dining concept designed around meals made without the top nine allergens and gluten.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <p id="diningNoResults" class="no-results" hidden>No places match that search. Try a different term or category.</p>
+                    </div>
+                </div>
+                <aside class="stack">
+                    <div class="panel-highlight"><span class="eyebrow light">CHECK BEFORE YOU GO</span>
+                        <h3>Menus and hours can change.</h3>
+                        <p>Use Miami's official dining site for current locations, hours, dining policies, menu information, and meal plan details.</p><a class="text-link" href="https://miamioh.edu/life-at-miami/living-on-campus/dining/places-to-eat/" target="_blank" rel="noopener noreferrer">Official dining locations <i class="material-icons" aria-hidden="true">open_in_new</i></a>
+                    </div>
+                    <div class="panel">
+                        <h3>Quick dining tips</h3>
+                        <ul class="clean-list">
+                            <li>Review your meal-plan options.</li>
+                            <li>Look up food allergies and dietary needs in advance.</li>
+                            <li>Keep your university ID and payment information accessible.</li>
+                            <li>Try one unfamiliar option with a friend.</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <hr class="section-break" />
+            <div class="two-col">
+                <div class="panel"><i class="material-icons" aria-hidden="true">people</i>
+                    <h3>Meals make memories.</h3>
+                    <p>Invite a classmate to lunch, say hello to a neighbor, or grab a coffee after a study session. Everyday routines are often where friendships start.</p>
+                </div>
+                <div class="panel"><i class="material-icons" aria-hidden="true">verified_user</i>
+                    <h3>Food allergies or dietary questions?</h3>
+                    <p>Do not rely on the sample descriptions here for allergen or food-safety decisions. Check Miami's current official dining guidance and speak directly with dining staff.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand"><span class="brand-mark" aria-hidden="true">M</span><span>Freshman Field Guide</span></div>
+                    <p>A student-made-style introduction to life at Miami University, Oxford, Ohio. Your new chapter starts here.</p>
+                </div>
+                <div>
+                    <h3>Get started</h3><a href="checklist.html">Freshman checklist</a><a href="orientation.html">Orientation & Welcome</a><a href="housing.html">Housing and residence life</a>
+                </div>
+                <div>
+                    <h3>Explore Miami</h3><a href="dining.html">Dining & food</a><a href="academics.html">Academics</a><a href="campus.html">Campus guide</a><a href="activities.html">Student activities</a>
+                </div>
+                <div>
+                    <h3>Here to help</h3><a href="support.html">Support and wellness</a><a href="faq.html">FAQs & contact</a><a href="https://miamioh.edu/life-at-miami/new-students-orientation/orientation/guidebook/" target="_blank" rel="noopener noreferrer">Official Miami guidebook</a>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 Freshman Field Guide · Educational demonstration, not an official Miami University site.</span><span>Always verify deadlines, services, and policies on <a href="https://miamioh.edu/" target="_blank" rel="noopener noreferrer">MiamiOH.edu</a>.</span></div>
+        </div>
+    </footer>
+    <!-- Materialize JavaScript must load before our custom JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

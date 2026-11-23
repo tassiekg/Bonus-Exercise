@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Oxford, Ohio | Miami Freshman Field Guide</title>
+    <meta name="description" content="Discover Oxford, Ohio—local attractions, Uptown restaurants, hotels, and an interactive stay cost estimator for Miami University students and families." />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Materialize CSS 1.0.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <div class="site-topline">
+        <div class="container">
+            <span>THE FIRST-YEAR FIELD GUIDE · OXFORD, OHIO</span>
+            <span class="topline-right">Student project example · <a href="https://miamioh.edu/life-at-miami/new-students-orientation/orientation/guidebook/" target="_blank" rel="noopener noreferrer">Official guidebook</a></span>
+        </div>
+    </div>
+
+    <nav id="site-nav" aria-label="Primary navigation">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-link" aria-label="Miami Freshman Guide homepage">
+                <span class="brand-mark"><img src="assets/Miami_Redhawks_logo.svg" alt="Miami RedHawks logo" /></span>
+                <span class="brand-wordmark"><b>MIAMI UNIVERSITY</b><small>FRESHMAN FIELD GUIDE</small></span>
+            </a>
+            <div class="desktop-links">
+                <a href="index.html">Home</a>
+                <a href="#!" class="dropdown-trigger" data-target="drop-0" aria-label="Getting Started menu">Getting Started <i class="material-icons" aria-hidden="true">expand_more</i></a>
+                <a href="#!" class="dropdown-trigger" data-target="drop-1" aria-label="Campus Life menu">Campus Life <i class="material-icons" aria-hidden="true">expand_more</i></a>
+                <a href="#!" class="dropdown-trigger active" data-target="drop-2" aria-label="Explore menu">Explore <i class="material-icons" aria-hidden="true">expand_more</i></a>
+                <a href="#!" class="dropdown-trigger" data-target="drop-3" aria-label="Support menu">Support <i class="material-icons" aria-hidden="true">expand_more</i></a>
+            </div>
+            <a class="nav-cta waves-effect waves-light" href="checklist.html">Get ready <i class="material-icons" aria-hidden="true">arrow_forward</i></a>
+            <button type="button" class="menu-button sidenav-trigger" data-target="mobile-nav" aria-label="Open mobile menu" aria-controls="mobile-nav"><i class="material-icons" aria-hidden="true">menu</i></button>
+        </div>
+    </nav>
+
+    <ul id="drop-0" class="dropdown-content">
+        <li><a href="checklist.html">Freshman checklist</a></li>
+        <li><a href="orientation.html">Orientation &amp; Welcome</a></li>
+    </ul>
+    <ul id="drop-1" class="dropdown-content">
+        <li><a href="housing.html">Housing &amp; residence life</a></li>
+        <li><a href="dining.html">Dining &amp; food</a></li>
+        <li><a href="activities.html">Clubs &amp; activities</a></li>
+    </ul>
+    <ul id="drop-2" class="dropdown-content">
+        <li><a href="academics.html">Academics &amp; registration</a></li>
+        <li><a href="campus.html">Campus &amp; transportation</a></li>
+        <li><a href="oxford.html" class="active">Oxford</a></li>
+    </ul>
+    <ul id="drop-3" class="dropdown-content">
+        <li><a href="support.html">Health &amp; wellness</a></li>
+        <li><a href="faq.html">FAQs &amp; contact</a></li>
+    </ul>
+
+    <ul class="sidenav" id="mobile-nav" aria-label="Mobile navigation">
+        <li>
+            <div class="mobile-header">
+                <b>MIAMI FIELD GUIDE</b>
+                <p>Everything you need for day one.</p>
+            </div>
+        </li>
+        <li><a href="index.html"><i class="material-icons" aria-hidden="true">home</i> Home</a></li>
+        <li><div class="subnav-label">Get started</div></li>
+        <li><a href="checklist.html"><i class="material-icons" aria-hidden="true">checklist</i> Freshman Checklist</a></li>
+        <li><a href="orientation.html"><i class="material-icons" aria-hidden="true">event</i> Orientation &amp; Welcome</a></li>
+        <li><div class="subnav-label">Campus life</div></li>
+        <li><a href="housing.html"><i class="material-icons" aria-hidden="true">hotel</i> Housing &amp; Residence Life</a></li>
+        <li><a href="dining.html"><i class="material-icons" aria-hidden="true">restaurant</i> Dining &amp; Food</a></li>
+        <li><div class="subnav-label">Academics &amp; Explore</div></li>
+        <li><a href="academics.html"><i class="material-icons" aria-hidden="true">school</i> Academics &amp; Registration</a></li>
+        <li><a href="campus.html"><i class="material-icons" aria-hidden="true">map</i> Campus &amp; Transportation</a></li>
+        <li><a href="oxford.html" class="active"><i class="material-icons" aria-hidden="true">local_activity</i> Oxford</a></li>
+        <li><div class="subnav-label">Community</div></li>
+        <li><a href="activities.html"><i class="material-icons" aria-hidden="true">groups</i> Clubs &amp; Activities</a></li>
+        <li><a href="support.html"><i class="material-icons" aria-hidden="true">favorite</i> Wellness &amp; Support</a></li>
+        <li><div class="subnav-label">Ask</div></li>
+        <li><a href="faq.html"><i class="material-icons" aria-hidden="true">help_outline</i> FAQs &amp; Contact</a></li>
+    </ul>
+
+    <main id="main-content">
+        <!-- Page Hero -->
+        <header class="page-hero">
+            <div class="container page-hero-grid">
+                <div>
+                    <nav class="breadcrumbs" aria-label="Breadcrumb">
+                        <a href="index.html">Home</a> &nbsp;/&nbsp; Explore &nbsp;/&nbsp; Oxford, Ohio
+                    </nav>
+                    <span class="pill-label"><i class="material-icons" aria-hidden="true">location_city</i> COLLEGE TOWN GUIDE</span>
+                    <h1>Welcome to Oxford, Ohio.</h1>
+                    <p>Classic brick streets, tree-lined parks, steamed bagels on High Street, and wooded trails just minutes from campus—here is everything freshmen and visiting families should know about Miami’s hometown.</p>
+                </div>
+                <div class="page-hero-icon" aria-hidden="true">
+                    <i class="material-icons">storefront</i>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-main">
+            <div class="container">
+                <!-- Section 1: Oxford Overview -->
+                <section aria-labelledby="oxford-intro-heading">
+                    <div class="split-col">
+                        <div>
+                            <span class="eyebrow">SMALL TOWN, BIG SPIRIT</span>
+                            <h2 id="oxford-intro-heading">Where campus meets Uptown.</h2>
+                            <p class="intro-text">Located in southwestern Ohio about 35 miles northwest of Cincinnati, Oxford was founded alongside Miami University in 1809. High Street serves as the vibrant boundary between the historic red-brick campus and Uptown’s independent cafés, boutiques, and gathering spots.</p>
+                            <p class="muted">Whether you are arriving for Summer Orientation, August Move-In, or Family Weekend, almost everything in Uptown is a pleasant five- to ten-minute walk from the Academic Quad.</p>
+                        </div>
+                        <aside class="panel-highlight">
+                            <span class="eyebrow light">QUICK TOWN FACTS</span>
+                            <h3>Oxford at a Glance</h3>
+                            <p><strong>Walkability:</strong> Uptown High Street borders the north edge of campus—no car needed for daily errands or coffee runs.</p>
+                            <p><strong>Lodging Tip:</strong> Hotels fill quickly for Move-In, Family Weekend, and Commencement. Use the estimator below to compare nightly rates and total stay costs.</p>
+                            <a class="text-link" href="#hotel-estimator">Jump to Hotel Cost Estimator <i class="material-icons" aria-hidden="true">arrow_downward</i></a>
+                        </aside>
+                    </div>
+                </section>
+
+                <hr class="section-break" />
+
+                <!-- Section 2: Local Attractions -->
+                <section aria-labelledby="attractions-heading">
+                    <div class="section-header">
+                        <span class="eyebrow">THINGS TO DO</span>
+                        <h2 id="attractions-heading">Local attractions &amp; outdoor escapes.</h2>
+                        <p>Take a break from unpacking or campus tours with historic landmarks, weekend markets, and nearby state park trails.</p>
+                    </div>
+
+                    <div class="three-col">
+                        <article class="info-card">
+                            <i class="material-icons" aria-hidden="true">park</i>
+                            <span class="icon-label">OUTDOOR ADVENTURE</span>
+                            <h3>Hueston Woods State Park</h3>
+                            <p>Just five miles north of campus, featuring Acton Lake, hiking and mountain biking trails, fossil hunting, canoe rentals, and a nature center.</p>
+                            <a class="text-link" href="https://ohiodnr.gov/go-and-do/plan-a-visit/find-a-property/hueston-woods-state-park" target="_blank" rel="noopener noreferrer">Park details <i class="material-icons" aria-hidden="true">open_in_new</i></a>
+                        </article>
+
+                        <article class="info-card">
+                            <i class="material-icons" aria-hidden="true">local_florist</i>
+                            <span class="icon-label">WEEKEND TRADITION</span>
+                            <h3>Oxford Farmers Market</h3>
+                            <p>Held Saturday mornings year-round near Main and Church Streets in Uptown, offering local produce, baked goods, honey, and handmade crafts.</p>
+                            <a class="text-link" href="https://www.oxfordfarmersmarket.com/" target="_blank" rel="noopener noreferrer">Market hours <i class="material-icons" aria-hidden="true">open_in_new</i></a>
+                        </article>
+
+                        <article class="info-card">
+                            <i class="material-icons" aria-hidden="true">museum</i>
+                            <span class="icon-label">LOCAL HISTORY</span>
+                            <h3>McGuffey House &amp; Museum</h3>
+                            <p>The former home of Miami professor William Holmes McGuffey, creator of the famous 19th-century McGuffey Eclectic Readers, located right on Spring Street.</p>
+                            <a class="text-link" href="https://miamioh.edu/cca/mcguffey-museum/" target="_blank" rel="noopener noreferrer">Museum info <i class="material-icons" aria-hidden="true">open_in_new</i></a>
+                        </article>
+
+                        <article class="info-card">
+                            <i class="material-icons" aria-hidden="true">palette</i>
+                            <span class="icon-label">ARTS &amp; CULTURE</span>
+                            <h3>Oxford Community Arts Center</h3>
+                            <p>Housed in the historic Oxford Female Institute building on South College Avenue, hosting rotating art galleries, concerts, and community workshops.</p>
+                            <a class="text-link" href="https://www.oxarts.org/" target="_blank" rel="noopener noreferrer">Events calendar <i class="material-icons" aria-hidden="true">open_in_new</i></a>
+                        </article>
+
+                        <article class="info-card">
+                            <i class="material-icons" aria-hidden="true">terrain</i>
+                            <span class="icon-label">SCENIC TRAILS</span>
+                            <h3>Silvoor Biological Sanctuary</h3>
+                            <p>Part of Miami’s Natural Areas on the eastern edge of campus—quiet wooded paths and spring wildflowers ideal for a study break walk.</p>
+                            <a class="text-link" href="https://miamioh.edu/cas/centers-institutes/natural-areas/" target="_blank" rel="noopener noreferrer">Trail map <i class="material-icons" aria-hidden="true">open_in_new</i></a>
+                        </article>
+
+                        <article class="info-card">
+                            <i class="material-icons" aria-hidden="true">stadium</i>
+                            <span class="icon-label">REDHAWK SPIRIT</span>
+                            <h3>Uptown Parks &amp; Yager Stadium</h3>
+                            <p>Catch summer concerts at Uptown Memorial Park Pavilion or cheer on Miami Football, Hockey, and Basketball during family visits.</p>
+                            <a class="text-link" href="https://miamiredhawks.com/" target="_blank" rel="noopener noreferrer">Miami Athletics <i class="material-icons" aria-hidden="true">open_in_new</i></a>
+                        </article>
+                    </div>
+                </section>
+
+                <hr class="section-break" />
+
+                <!-- Section 3: Local Restaurants -->
+                <section aria-labelledby="restaurants-heading">
+                    <div class="section-header">
+                        <span class="eyebrow">WHERE TO EAT UPTOWN</span>
+                        <h2 id="restaurants-heading">Iconic Oxford restaurants &amp; cafés.</h2>
+                        <p>Beyond campus dining halls, Uptown Oxford has decades-old student staples and family-friendly sit-down spots.</p>
+                    </div>
+
+                    <div class="directory-grid">
+                        <article class="directory-card">
+                            <div class="round-icon" aria-hidden="true"><i class="material-icons">bakery_dining</i></div>
+                            <div>
+                                <span class="microtag">E. HIGH STREET · SINCE 1975</span>
+                                <h3>Bagel &amp; Deli Shop</h3>
+                                <p>Famous for more than 90 creative steamed bagel sandwiches—ask for the “Crunch &amp; Munch” or “Miami Bagel” when parents are in town.</p>
+                            </div>
+                        </article>
+
+                        <article class="directory-card">
+                            <div class="round-icon" aria-hidden="true"><i class="material-icons">free_breakfast</i></div>
+                            <div>
+                                <span class="microtag">W. SPRING STREET · BRUNCH FAVORITE</span>
+                                <h3>Patterson’s Cafe</h3>
+                                <p>Cozy family-owned breakfast and lunch spot serving pancakes, omelets, and fresh coffee all day just south of Uptown.</p>
+                            </div>
+                        </article>
+
+                        <article class="directory-card">
+                            <div class="round-icon" aria-hidden="true"><i class="material-icons">restaurant</i></div>
+                            <div>
+                                <span class="microtag">E. HIGH STREET · CAMPUS STAPLE</span>
+                                <h3>Skipper’s Pub &amp; Top Deck</h3>
+                                <p>A longtime Oxford tradition known for Greek-style gyros, burgers, and casual family lunches right across from campus.</p>
+                            </div>
+                        </article>
+
+                        <article class="directory-card">
+                            <div class="round-icon" aria-hidden="true"><i class="material-icons">lunch_dining</i></div>
+                            <div>
+                                <span class="microtag">S. MAIN STREET · FAMILY DINNER</span>
+                                <h3>Gaslight Brewhouse</h3>
+                                <p>Hearty burgers, shareable appetizers, and family-friendly dinner seating in the heart of Uptown’s historic district.</p>
+                            </div>
+                        </article>
+
+                        <article class="directory-card">
+                            <div class="round-icon" aria-hidden="true"><i class="material-icons">local_pizza</i></div>
+                            <div>
+                                <span class="microtag">E. HIGH STREET · LATE NIGHT &amp; PIZZA</span>
+                                <h3>Bruno’s Pizza &amp; SDS Pizza</h3>
+                                <p>Two beloved hometown pizzerias serving hot slices, subs, and classic “Bruno Dough” for move-in day fuel.</p>
+                            </div>
+                        </article>
+
+                        <article class="directory-card">
+                            <div class="round-icon" aria-hidden="true"><i class="material-icons">icecream</i></div>
+                            <div>
+                                <span class="microtag">W. HIGH STREET · SWEET TREATS</span>
+                                <h3>Graeter’s Ice Cream &amp; Fridge &amp; Pantry</h3>
+                                <p>Grab fresh deli wraps at Fridge &amp; Pantry on Church Street, then stroll to High Street for Ohio-famous French Pot ice cream.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <hr class="section-break" />
+
+                <!-- Section 4: Hotels & Interactive Cost Estimator -->
+                <section id="hotel-estimator" aria-labelledby="hotels-heading">
+                    <div class="section-header">
+                        <span class="eyebrow">VISITING OXFORD</span>
+                        <h2 id="hotels-heading">Local hotels &amp; accommodation cost estimator.</h2>
+                        <p>Compare popular Oxford hotels near Miami University and calculate your estimated stay total including 15.5% local lodging taxes and fees.</p>
+                    </div>
+
+                    <div class="split-col">
+                        <!-- Hotel Overview Cards -->
+                        <div class="stack">
+                            <div class="panel">
+                                <div class="resource-row">
+                                    <i class="material-icons" aria-hidden="true">apartment</i>
+                                    <div>
+                                        <b>The Elms Hotel · $146 / night est.</b>
+                                        <p>75 S. Main St. — Boutique Uptown hotel two blocks from campus with a 24-hour fitness center and walkable access to High Street dining.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">
+                                <div class="resource-row">
+                                    <i class="material-icons" aria-hidden="true">hotel</i>
+                                    <div>
+                                        <b>Fairfield by Marriott Inn &amp; Suites Oxford · $159 / night est.</b>
+                                        <p>5186 Morning Sun Rd. — Modern suites roughly one mile north of campus with complimentary breakfast and Wi-Fi.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">
+                                <div class="resource-row">
+                                    <i class="material-icons" aria-hidden="true">king_bed</i>
+                                    <div>
+                                        <b>Hampton Inn Oxford / Miami University Area · $152 / night est.</b>
+                                        <p>375 S. College Ave. — Less than a mile from campus with indoor pool, free hot breakfast, and pet-friendly rooms.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">
+                                <div class="resource-row">
+                                    <i class="material-icons" aria-hidden="true">single_bed</i>
+                                    <div>
+                                        <b>Best Western Sycamore Inn ($118), Sleep Inn ($88) &amp; Comfort Inn ($80)</b>
+                                        <p>Convenient budget-friendly choices along Sycamore Street and College Corner Pike, all within a 5-minute drive of campus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Hotel Cost Estimator -->
+                        <aside class="interactive-box hotel-estimator-box" aria-labelledby="estimator-title">
+                            <span class="icon-label"><i class="material-icons" aria-hidden="true">calculate</i> STAY CALCULATOR</span>
+                            <h3 id="estimator-title">Hotel Cost Estimator</h3>
+                            <p class="small-note">Select a local Oxford hotel and enter the number of nights to estimate your room cost plus 15.5% taxes and fees.</p>
+
+                            <form id="hotelEstimatorForm" novalidate>
+                                <div class="input-field">
+                                    <select id="hotelSelect" aria-label="Select an Oxford hotel">
+                                        <option value="" disabled selected>Choose an Oxford hotel...</option>
+                                        <option value="146" data-hotel-name="The Elms Hotel">The Elms Hotel — $146 / night</option>
+                                        <option value="159" data-hotel-name="Fairfield by Marriott Inn & Suites Oxford">Fairfield by Marriott Oxford — $159 / night</option>
+                                        <option value="152" data-hotel-name="Hampton Inn Oxford / Miami University Area">Hampton Inn Oxford — $152 / night</option>
+                                        <option value="118" data-hotel-name="Best Western Sycamore Inn">Best Western Sycamore Inn — $118 / night</option>
+                                        <option value="88" data-hotel-name="Sleep Inn & Suites Oxford">Sleep Inn &amp; Suites Oxford — $88 / night</option>
+                                        <option value="80" data-hotel-name="Comfort Inn Oxford">Comfort Inn Oxford — $80 / night</option>
+                                    </select>
+                                    <label for="hotelSelect">Select Hotel</label>
+                                </div>
+
+                                <div class="input-field">
+                                    <i class="material-icons prefix" aria-hidden="true">nights_stay</i>
+                                    <input id="nightsInput" type="number" min="1" max="30" step="1" value="2" required />
+                                    <label for="nightsInput" class="active">Number of Nights (1–30)</label>
+                                </div>
+
+                                <button type="button" id="costEstimateBtn" class="btn brand-btn waves-effect waves-light" style="width:100%;" onclick="calculateHotelCost()">
+                                    Cost Estimate <i class="material-icons right" aria-hidden="true">payments</i>
+                                </button>
+                            </form>
+
+                            <div id="hotelCostOutput" class="output-card hotel-cost-output" role="region" aria-live="polite">
+                                <p class="muted" style="margin:0;">Select a hotel above, enter your number of nights, and click <strong>Cost Estimate</strong> to view the nightly rate and total cost with 15.5% taxes &amp; fees.</p>
+                            </div>
+                        </aside>
+                    </div>
+
+                    <!-- Researched Rate Sources -->
+                    <div class="sources-strip" style="margin-top:28px;">
+                        <div>
+                            <b>Hotel Rate Research Sources</b>
+                            <p class="small-note" style="margin:4px 0 0;">Estimated standard nightly base rates gathered from travel aggregators (seasonal event weekends vary):
+                                <a href="https://www.kayak.com/Oxford-Hotels.30378.hotel.ksp" target="_blank" rel="noopener noreferrer">KAYAK Oxford Hotels</a> ·
+                                <a href="https://www.momondo.com/hotels/oxford-ohio/The-Elms-Hotel.mhd65092.ksp" target="_blank" rel="noopener noreferrer">momondo (The Elms Hotel)</a> ·
+                                <a href="https://www.orbitz.com/Oxford-Hotels-The-Elms-Hotel.h892183.Hotel-Information" target="_blank" rel="noopener noreferrer">Orbitz Oxford</a> ·
+                                <a href="https://enjoyoxford.org/" target="_blank" rel="noopener noreferrer">Enjoy Oxford Visitors Bureau</a>
+                            </p>
+                        </div>
+                        <a class="text-link" href="campus.html">Explore Campus &amp; Transit <i class="material-icons" aria-hidden="true">arrow_forward</i></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <span class="brand-mark"><img src="assets/Miami_Redhawks_logo.svg" alt="Miami RedHawks logo" /></span>
+                        <span>Freshman Field Guide</span>
+                    </div>
+                    <p>A student-made-style introduction to life at Miami University, Oxford, Ohio. Your new chapter starts here.</p>
+                </div>
+                <div>
+                    <h3>Get started</h3>
+                    <a href="checklist.html">Freshman checklist</a>
+                    <a href="orientation.html">Orientation &amp; Welcome</a>
+                    <a href="housing.html">Housing and residence life</a>
+                </div>
+                <div>
+                    <h3>Explore Miami</h3>
+                    <a href="dining.html">Dining &amp; food</a>
+                    <a href="academics.html">Academics</a>
+                    <a href="campus.html">Campus guide</a>
+                    <a href="oxford.html">Oxford, Ohio</a>
+                    <a href="activities.html">Student activities</a>
+                </div>
+                <div>
+                    <h3>Here to help</h3>
+                    <a href="support.html">Support and wellness</a>
+                    <a href="faq.html">FAQs &amp; contact</a>
+                    <a href="https://miamioh.edu/life-at-miami/new-students-orientation/orientation/guidebook/" target="_blank" rel="noopener noreferrer">Official Miami guidebook</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Freshman Field Guide · Educational demonstration, not an official Miami University site.</span>
+                <span>Always verify deadlines, services, and policies on <a href="https://miamioh.edu/" target="_blank" rel="noopener noreferrer">MiamiOH.edu</a>.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Materialize JavaScript must load before our custom JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
